@@ -38,7 +38,7 @@ export default {
       let todoItem = {
         destination: this.destination,
         author: this.author,
-        time: new Date().toLocaleString(),
+        time: new Date().toLocaleString().slice(0,17),
         details: this.details
       }
       if(this.destination.length > 0 && this.author.length > 0){
