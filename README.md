@@ -1,4 +1,4 @@
-# vue-finalassignment
+# vue-final assignment
 
 ## Project setup
 ```
