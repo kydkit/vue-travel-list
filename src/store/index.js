@@ -10,25 +10,25 @@ export default new Vuex.Store({
       {
         destination: "Los Angeles",
         author: "Kyd",
-        time: new Date().toLocaleString(),
+        time: new Date().toLocaleString().slice(0,17),
         details: "Visit fam, Broad Museum, Dim Sum"
       },
       {
         destination: "Thailand",
         author: "Astrid",
-        time: new Date().toLocaleString(),
+        time: new Date().toLocaleString().slice(0,17),
         details: "Bangkok, Mae Hong Son, Koh Kut"
       },
       {
         destination: "Medellin",
         author: "Anaïs",
-        time: new Date().toLocaleString(),
+        time: new Date().toLocaleString().slice(0,17),
         details: "Cartagena, platanos, mangostino"
       },
       {
         destination: "Switzerland",
         author: "Nikki",
-        time: new Date().toLocaleString(),
+        time: new Date().toLocaleString().slice(0,17),
         details: "Wanna see lots of snow and St Bernards"
       }
     ], 
