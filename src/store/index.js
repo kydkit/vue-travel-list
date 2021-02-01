@@ -47,7 +47,6 @@ export default new Vuex.Store({
     },
     movingUp(state, payload){
       let num = state.todos.indexOf(payload);
-      // if(num < 0 || num >= state.todos.length){
         if(num === 0){
         return;
       }
@@ -55,10 +54,6 @@ export default new Vuex.Store({
     }, 
     movingDown(state, payload){
       let num = state.todos.indexOf(payload);
-      // if(num < 0 || num >= state.todos.length){
-      //   if(num === 0){
-      //   return;
-      // }
       state.todos.splice(num, 1);
       state.todos.splice(num + 1, 0, payload)
     },
@@ -66,7 +61,6 @@ export default new Vuex.Store({
       let num = state.todos.indexOf(payload);
       state.todos.splice(num, 1);
       state.doneList.push(payload)
-      // state.todos.push(payload)
     },
 
     //methods for for doneCards
