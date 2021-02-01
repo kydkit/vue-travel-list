@@ -47,17 +47,20 @@ export default new Vuex.Store({
     },
     movingUp(state, payload){
       let num = state.todos.indexOf(payload);
-      if(num < 0 || num >= payload.length){
+      // if(num < 0 || num >= state.todos.length){
+        if(num === 0){
         return;
       }
       state.todos.splice((num-1),2,state.todos[num], state.todos[num-1]);
     }, 
     movingDown(state, payload){
       let num = state.todos.indexOf(payload);
-      if(num < 0 || num >= payload.length){
-        return;
-      }
-      state.todos.splice(num, 2, state.todos[num+1], state.todos[num]);
+      // if(num < 0 || num >= state.todos.length){
+      //   if(num === 0){
+      //   return;
+      // }
+      state.todos.splice(num, 1);
+      state.todos.splice(num + 1, 0, payload)
     },
     doneMoveDown(state, payload){
       let num = state.todos.indexOf(payload);
