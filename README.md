@@ -1,4 +1,5 @@
-# vue-final assignment
+# vue-assignment
+First project in Vue.js after learning Vue basics in one week. The aim is to create a to-do list (or something similar) within given criterias. 
 
 ## Project setup
 ```
